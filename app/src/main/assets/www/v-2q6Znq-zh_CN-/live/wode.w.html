@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cfYnmMr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfYnmMr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,">
+  <style>.border.cfYnmMr{border: 2px solid rgb(255, 255, 255)} .loginstatus.cfYnmMr{margin-left: 15%; width: 70%; border-style: none none none none} .registerstatus.cfYnmMr{background-color: ff0033; width: 35%; border-style: none none none none} .cancelstatus.cfYnmMr{background-color: rgb(255, 0, 0); margin-left: 15%; width: 70%; border-style: none none none none} .loginstatus1.cfYnmMr{background-color: rgb(0, 168, 255); margin-left: 15%; width: 70%; border-style: none none none none} .cancelstatus1.cfYnmMr{background-color: rgb(255, 0, 0); margin-left: 15%; width: 70%; border-style: none none none none}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="cfYnmMr" class="cfYnmMr"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" style="top:14px;left:90px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:windowDialog1Receive" data-config="{&#34;src&#34;:&#34;$model/UI2/live/login.w&#34;}" __cid="cfYnmMr" class="cfYnmMr">
+    <div class="x-dialog-overlay cfYnmMr" __cid="cfYnmMr"></div>
+    <div class="x-dialog cfYnmMr" style="display:none;" __cid="cfYnmMr">
+      <div class="x-dialog-title cfYnmMr" __cid="cfYnmMr">
+        <button class="close cfYnmMr" __cid="cfYnmMr">
+          <span __cid="cfYnmMr" class="cfYnmMr">×</span>
+        </button>
+        <div class="x-dialog-title-text cfYnmMr" __cid="cfYnmMr"></div>
+      </div>
+      <div class="x-dialog-body cfYnmMr" __cid="cfYnmMr"></div>
+    </div>
+  </span>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcaaiEne-iosstatusbar cfYnmMr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfYnmMr"> 
+    <div class="x-panel-top cfYnmMr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfYnmMr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfYnmMr" style="background-color:white;" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;个人中心&#34;}" __cid="cfYnmMr"> 
+        <div class="x-titlebar-left cfYnmMr" __cid="cfYnmMr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cfYnmMr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cfYnmMr"> 
+            <i class="icon-chevron-left cfYnmMr" __cid="cfYnmMr"></i>  
+            <span __cid="cfYnmMr" class="cfYnmMr"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cfYnmMr" style="font-weight:normal;" __cid="cfYnmMr">
+          <span xid="span1" __cid="cfYnmMr" class="cfYnmMr"></span>个人中心
+        </div>  
+        <div class="x-titlebar-right  cfYnmMr" __cid="cfYnmMr">
+          <div class="empty cfYnmMr" __cid="cfYnmMr"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfYnmMr" xid="enroll" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:enrollClick" __cid="cfYnmMr"> 
+            <i xid="i3" __cid="cfYnmMr" class="cfYnmMr"></i>  
+            <span xid="span4" __cid="cfYnmMr" class="cfYnmMr"></span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cfYnmMr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfYnmMr"> 
+      <div xid="div6" style="text-align:center;z-index:2000;position:absolute;width:100%;top:40px;" __cid="cfYnmMr" class="cfYnmMr">
+        <img src="@justepContextPath@/live/img/192.png" alt="" xid="image6" style="width:80px;" class="img-circle cfYnmMr" __cid="cfYnmMr">  
+        <h3 xid="h31" style="color:#9ed04d;" class="hidden cfYnmMr" __cid="cfYnmMr">直播ID:18258393397</h3>
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon   hidden cfYnmMr" xid="button4" style="background-color:white;color:#2cc17b;border-radius:50px;margin-top:-120px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-camera&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cfYnmMr"> 
+          <i xid="i4" class="glyphicon glyphicon-camera cfYnmMr" __cid="cfYnmMr"></i>  
+          <span xid="span13" __cid="cfYnmMr" class="cfYnmMr"></span>
+        </a> 
+      </div>
+      <div xid="div5" style="position:absolute;left:0;top:0;overflow:hidden;height:200px;width:100%;border-width:1px;" __cid="cfYnmMr" class="cfYnmMr"></div>  
+      <div xid="div7" style="margin-top:200px;" __cid="cfYnmMr" class="cfYnmMr">
+        <ul class="list-group x-tuniu cfYnmMr" xid="ul1" __cid="cfYnmMr"> 
+          <li xid="li1" class="list-group-item cfYnmMr" __cid="cfYnmMr" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}">我的课程
+            <span class="pull-right text-muted cfYnmMr" xid="span17" __cid="cfYnmMr">&gt;</span> 
+          </li>  
+          <li class="list-group-item cfYnmMr" xid="li2" style="border-bottom:10px solid #f2f2f2;" __cid="cfYnmMr" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}">消费记录
+            <span class="pull-right text-muted cfYnmMr" xid="span16" __cid="cfYnmMr">&gt;</span> 
+          </li>  
+          <li class="list-group-item  hidden cfYnmMr" xid="li2" __cid="cfYnmMr">设置
+            <span class="pull-right text-muted cfYnmMr" xid="span16" __cid="cfYnmMr">&gt;</span> 
+          </li> 
+        </ul>
+      </div>  
+      <div xid="div1" __cid="cfYnmMr" class="cfYnmMr">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default pull-left  loginstatus cfYnmMr" xid="loginBtn" style="background-color:white" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginBtnClick" data-config="{&#34;label&#34;:&#34;登录&#34;}" __cid="cfYnmMr"> 
+          <i xid="i1" __cid="cfYnmMr" class="cfYnmMr"></i>  
+          <span xid="span3" __cid="cfYnmMr" class="cfYnmMr">登录</span>
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cfYnmMr" class="cfYnmMr">.x-panel.pcaaiEne-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcaaiEne-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcaaiEne-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcaaiEne-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaaiEne-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcaaiEne-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaaiEne-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaaiEne-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaaiEne-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog2" style="top:20px;left:218px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:windowDialog2Receive" data-config="{&#34;src&#34;:&#34;$model/UI2/live/register.w&#34;}" __cid="cfYnmMr" class="cfYnmMr">
+    <div class="x-dialog-overlay cfYnmMr" __cid="cfYnmMr"></div>
+    <div class="x-dialog cfYnmMr" style="display:none;" __cid="cfYnmMr">
+      <div class="x-dialog-title cfYnmMr" __cid="cfYnmMr">
+        <button class="close cfYnmMr" __cid="cfYnmMr">
+          <span __cid="cfYnmMr" class="cfYnmMr">×</span>
+        </button>
+        <div class="x-dialog-title-text cfYnmMr" __cid="cfYnmMr"></div>
+      </div>
+      <div class="x-dialog-body cfYnmMr" __cid="cfYnmMr"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:messageDialog1OK" data-config="{&#34;title&#34;:&#34;确定要注销么？&#34;,&#34;type&#34;:&#34;OKCancel&#34;}" __cid="cfYnmMr" class="cfYnmMr">
+    <div class="x-modal-overlay cfYnmMr" __cid="cfYnmMr"></div>
+    <div class="x-modal cfYnmMr" __cid="cfYnmMr">
+      <div class="x-modal-inner cfYnmMr" __cid="cfYnmMr">
+        <div class="x-modal-title cfYnmMr" __cid="cfYnmMr">确定要注销么？</div>
+        <div class="x-modal-text cfYnmMr" __cid="cfYnmMr"></div>
+        <input class="x-modal-prompt-input cfYnmMr" type="text" __cid="cfYnmMr">
+      </div>
+      <div class="x-modal-buttons cfYnmMr" __cid="cfYnmMr">
+        <a class="x-modal-button x-modal-button-bold OK cfYnmMr" value="ok" __cid="cfYnmMr">确定</a>
+        <a class="x-modal-button x-modal-button-bold Yes cfYnmMr" value="yes" __cid="cfYnmMr">是</a>
+        <a class="x-modal-button x-modal-button-bold No cfYnmMr" value="no" __cid="cfYnmMr">否</a>
+        <a class="x-modal-button x-modal-button-bold Cancel cfYnmMr" value="cancel" __cid="cfYnmMr">取消</a>
+      </div>
+    </div>
+  </span> 
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@mipmap/student_exercise_noselect"/>
+    <item android:state_selected="true" android:drawable="@mipmap/student_exercise_noselect"/>
+    <item  android:drawable="@mipmap/student_exercise_selected"/>
+
+ <!--       <bitmap android:src="@mipmap/student_exercise_selected"></bitmap>
+    &lt;!&ndash;</item>&ndash;&gt;
+    <item >
+        <bitmap android:src="@mipmap/student_exercise_noselect"></bitmap>
+    </item>-->
+</selector>

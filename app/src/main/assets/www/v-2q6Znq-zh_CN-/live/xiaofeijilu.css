@@ -1,0 +1,21 @@
+.nopadding{
+	padding:0
+}
+.nomargin{
+	margin:0
+}
+.biaoti{
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.titlebar{
+	background-color:#9ed04d 
+}
+
+.titlebar1{
+	background-color:#00A8FF
+}

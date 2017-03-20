@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llroot"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Unite1 Listen And See"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_textsize_16"
+            android:layout_margin="@dimen/title_margin_left_right_10"
+            />
+        <TextView
+            android:id="@+id/tv_sentence_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/content_textsize_16"
+            />
+        <ImageView
+            android:layout_width="@dimen/title_goback_heightwith"
+            android:layout_height="@dimen/title_goback_heightwith"
+            android:layout_marginLeft="@dimen/title_margin_left_right"
+            android:layout_gravity="center"
+            android:background="@drawable/test_goright"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bac_gray"
+        />
+</LinearLayout>

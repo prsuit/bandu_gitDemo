@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.bandu.talk.android.phone.activity.StudentHomeActivity">
+
+    <include layout="@layout/layout_title_image" />
+
+    <FrameLayout
+        android:id="@+id/fl_setudentmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_select"
+        android:layout_below="@+id/title_rl"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/rlStudentExercise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivStudentExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/selectormain_student_exercise" />
+
+            <TextView
+                android:id="@+id/tvStudentExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivStudentExercise"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/exercise_text_student_home"
+                android:textColor="@color/tv_color_my_default"
+                android:textSize="@dimen/text_size12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlStudentWork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivStudentWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/selectormain_student_work" />
+
+            <TextView
+                android:id="@+id/tvStudentWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivStudentWork"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/work_text_student_home"
+                android:textColor="@color/tv_color_my_default"
+                android:textSize="@dimen/text_size12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlStudentQingLive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivStudentQingLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/selectormain_student_live" />
+
+            <TextView
+                android:id="@+id/tvStudentQingLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivStudentQingLive"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="直播"
+                android:textColor="@color/tv_color_my_default"
+                android:textSize="@dimen/text_size12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMyInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivMyInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/selectormain_student_percent" />
+
+            <TextView
+                android:id="@+id/tvMyInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivMyInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/my_info_home"
+                android:textColor="@color/tv_color_my_default"
+                android:textSize="@dimen/text_size12" />
+
+            <TextView
+                android:id="@+id/redTv"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/ivMyInfo"
+                android:background="@drawable/red_point"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ivHazy"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

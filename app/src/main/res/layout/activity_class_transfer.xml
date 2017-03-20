@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="me.bandu.talk.android.phone.activity.ClassTransferActivity">
+
+    <include layout="@layout/title_layout"></include>
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:background="@color/back_gray"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/content_textsize_18"
+            android:textColor="@color/text_gray"
+            android:text="@string/please_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="@dimen/content_textsize_14"
+            android:textColor="@color/text_gray"
+            android:text="@string/text1_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:textSize="@dimen/content_textsize_14"
+            android:textColor="@color/text_gray"
+            android:text="@string/text2_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="6.0"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+        <EditText
+            android:id="@+id/uid_edt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/bandu_code"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/test_cursor"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/content_textsize_14"/>
+            <TextView
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/light_black"
+            android:textSize="40sp"
+            android:text="+"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="6.0"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <EditText
+                android:inputType="number"
+                android:id="@+id/phone_edt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/phone_last_four"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/test_cursor"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/content_textsize_14"/>
+            <TextView
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok"
+        android:textSize="@dimen/title_textsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_round_shape_button"
+        android:text="@string/transfer"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/red"
+        android:text="@string/attention_info"
+        android:textSize="@dimen/content_textsize_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/status_img"
+        android:layout_width="81.6dp"
+        android:layout_height="65.4dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/end" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/status_img"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/back_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.0"
+                android:gravity="center"
+                android:text="4/28"
+                android:textColor="#00afe6"
+                android:textSize="@dimen/content_textsize_16" />
+
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="#00afe6"
+                android:gravity="center"
+                android:text="MON"
+                android:textSize="@dimen/content_textsize_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.0"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="作业A1 标题XXXXX"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size18" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/fl_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_icon1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/complete" />
+
+                    <TextView
+                        android:id="@+id/num_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/iv_icon1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="--/--"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/content_textsize_12" />
+
+                    <ImageView
+                        android:id="@+id/iv_icon2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/allcomplete" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCheckWork"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/bg_red_circle_shap" />
+
+
+</RelativeLayout>

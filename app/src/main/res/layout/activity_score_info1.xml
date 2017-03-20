@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:background="#00000000"
+                android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/star_big"/>
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/hsmsgdlglayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_round2"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/main_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_tv"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:lineSpacingExtra="8dp"
+                android:paddingLeft="15dp"
+                android:text="@string/score_info"
+                android:textColor="@color/red"
+                android:textSize="@dimen/content_textsize_18"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/closebtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/close1"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="25.5dp"
+        android:layout_height="26dp"
+        android:src="@mipmap/star"/>
+</LinearLayout>

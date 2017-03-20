@@ -1,0 +1,22 @@
+.studentsubmit{
+	background-color:#9ed04d	
+}
+
+.teachersubmit{
+	background-color:#00A8FF
+	
+}
+
+.loginstatus{
+	background-color:#9ed04d;
+	margin-left:15%;
+	width:70%;
+	border-style:none none none none;
+}
+
+.loginstatus1{
+	background-color:#00A8FF;
+	margin-left:15%;
+	width:70%;
+	border-style:none none none none;
+}

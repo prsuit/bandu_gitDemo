@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="59.5dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"/>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector1"
+            android:text="开启伴读"
+            android:textColor="@color/green"
+            android:textSize="@dimen/content_textsize_18"/>
+    </LinearLayout>
+</RelativeLayout>

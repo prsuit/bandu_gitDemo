@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.bandu.talk.android.phone.fragment.ClassSetFragment"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_classset"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/line"/>
+            <TextView
+                android:id="@+id/tv_classname_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="班级名称"
+                android:textColor="@color/text_dark_gray"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/tv_classname_left"
+                android:id="@+id/tv_classname_set"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_dark_gray"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_classname_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/next"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/line"/>
+
+            <TextView
+                android:id="@+id/tv_classcode_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="班级编号"
+                android:textColor="@color/text_dark_gray"/>
+
+            <ImageView
+                android:id="@+id/share_img"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/wechat"
+                android:visibility="visible"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/tv_classcode_left"
+                android:id="@+id/tv_classcode_set"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_dark_gray"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/line"/>
+
+            <TextView
+                android:id="@+id/tv_classtime_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="创建时间"
+                android:textColor="@color/text_dark_gray"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/tv_classtime_left"
+                android:id="@+id/tv_classtime_set"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_dark_gray"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <Button
+                android:id="@+id/bt_transferClass"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="转让本班"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/four_blue"/>
+
+            <Button
+                android:id="@+id/bt_deleteClass"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="删除本班"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/four_red"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_green_layout"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_feed_back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_textsize_14"/>
+
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="180dp">
+    <EditText
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:id="@+id/feed_edt"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/back_shape_edittext"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_textsize_16"
+        android:hint="@string/feed_back_hint"
+        android:padding="10dp"
+        android:textColorHint="@color/text_gray"/>
+    <TextView
+        android:id="@+id/num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="right"
+        android:text="0/200"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/content_textsize_14"/>
+</RelativeLayout>
+    <TextView
+        android:visibility="visible"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/feed_back_info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <me.bandu.talk.android.phone.view.TagCloudView
+        android:id="@+id/tag_cloud_view"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tcvItemBorderHorizontal="8dp"
+        app:tcvItemBorderVertical="10dp"
+        app:tcvBorder="8dp"
+        app:tcvBackground="@drawable/tag_item_nomal"
+        app:tcvTextColor="@color/green"
+        app:tcvCanTagClick="true"/>
+
+    <EditText
+        android:id="@+id/contact_edt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size16"
+        android:background="@drawable/back_shape_edittext"
+        android:hint="@string/mail_hint"
+        android:padding="5dp"
+        android:textColorHint="@color/text_gray"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_login_button_green"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_textsize"/>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_size12"
+        android:textColor="@color/text_gray"
+        android:text="@string/help_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

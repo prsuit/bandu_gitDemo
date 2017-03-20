@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bac_gray"
+    >
+    <include layout="@layout/title_green_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_wihte_shap"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_16"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:text="很遗憾，还没来得及做就过期啦"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_16"
+                android:text="下次记得要及时完成哦！"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/add_exercise_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_blue_shap"
+                android:text="加入练习本"
+                android:textColor="@color/white"
+                android:textSize="@dimen/content_textsize_16"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="55dp"
+                android:paddingRight="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/commit_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:id="@+id/commit_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/test_score"/>
+            <TextView
+                android:id="@+id/commit_score"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="95分"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/bg_wihte_circle_shap"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_gree_combin_layout" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_combination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <me.bandu.talk.android.phone.view.CircleImageView
+                    android:id="@+id/civ_head_user"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@mipmap/default_avatar"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="1"
+                    android:text="@string/text_username"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_switch"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/change" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <me.bandu.talk.android.phone.view.CircleImageView
+                    android:id="@+id/civ_head_other"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@mipmap/default_avatar"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_othername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_changeUser"
+            android:padding="2dp"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/text_size16" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl_combination"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="25dp"
+            android:text="@string/text_change"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size16" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:clickable="false"
+            android:layout_toLeftOf="@id/tv_refresh"
+            android:layout_marginRight="-20dp"
+            android:background="@mipmap/icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/fl_usersmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <me.bandu.talk.android.phone.view.CircleImageView
+                android:id="@+id/civ_head_user_small"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/head_bg"
+                android:padding="5dp"/>
+                <ImageView
+                    android:id="@+id/iv_head_user_small"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:src="@mipmap/bandu_sure"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_username1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_username1"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_other1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <me.bandu.talk.android.phone.view.CircleImageView
+                android:id="@+id/civ_head_other1_small"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp" />
+                <ImageView
+                    android:id="@+id/iv_head_other1_small"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:src="@mipmap/bandu_sure"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_other1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/fl_other2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <me.bandu.talk.android.phone.view.CircleImageView
+                android:id="@+id/civ_head_other2_small"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp" />
+                <ImageView
+                    android:id="@+id/iv_head_other2_small"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:src="@mipmap/bandu_sure"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_other2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/fl_other3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <me.bandu.talk.android.phone.view.CircleImageView
+                android:id="@+id/civ_head_other3_small"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp" />
+                <ImageView
+                    android:id="@+id/iv_head_other3_small"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:src="@mipmap/bandu_sure"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_other3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/fl_other4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <me.bandu.talk.android.phone.view.CircleImageView
+                android:id="@+id/civ_othetr4_small"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp" />
+                <ImageView
+                    android:id="@+id/iv_head_other4_small"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:src="@mipmap/bandu_sure"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_other4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <me.bandu.talk.android.phone.view.PlayMp3View
+        android:id="@+id/pmv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </me.bandu.talk.android.phone.view.PlayMp3View>
+        <TextView
+            android:id="@+id/tv_share_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享，小秀一下"
+            android:textSize="@dimen/text_size16"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:textColor="@color/text_dark_gray"/>
+    <LinearLayout
+        android:id="@+id/ll_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_qzone"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_qqzone_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/qzone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qq"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_qq_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/qq" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tweet"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_tweet"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sina" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wechart_friend"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_wechart_friend_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/wxfriend" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wechart"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_wechart_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/wx" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/button_save"
+            android:text="@string/button_save"
+            android:textColor="@color/textbook_selected"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="@dimen/text_size16"/>
+    </LinearLayout>
+
+
+</ScrollView>
+</LinearLayout>

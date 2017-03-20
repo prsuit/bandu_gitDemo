@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:button="@null"
+    android:textSize="14sp"
+    android:layout_marginLeft="16dp"
+    android:textColor="@drawable/selector_textbook_chose_textcolor"
+    android:background="@drawable/selector_textbook_type"
+    android:gravity="center"
+    android:id="@+id/rb_grade"
+    android:text="按年级"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+</CheckBox>

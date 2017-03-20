@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@color/title_blue">
+
+        <RelativeLayout
+            android:id="@+id/title_left"
+            android:background="@drawable/selector_gray_trans"
+            android:paddingLeft="16dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_title_left_image"
+                android:layout_width="14dp"
+                android:layout_height="21dp"
+                android:background="@mipmap/back"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:layout_toRightOf="@id/title_left"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/content_textsize_16"
+            />
+
+        <TextView
+            android:id="@+id/title_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="各班统计"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:id="@+id/image_play_icon"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/music"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+            <TextView
+                android:background="@drawable/selector_gray_trans"
+                android:id="@+id/title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:paddingRight="16dp"
+                android:paddingLeft="8dp"
+                android:text="确认"
+                android:layout_toRightOf="@id/image_play_icon"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_idea"
+                android:layout_width="@dimen/title_goback_heightwith"
+                android:layout_height="@dimen/title_goback_heightwith"
+                android:src="@mipmap/icon_idea"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="16dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingBottom="10dp"
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="(--月--日 到 --月--日)"
+            android:textColor="#CFCFCB"/>
+
+        <ListView
+            android:id="@+id/statistics_class_list"
+            android:divider="#F4F4F4"
+            android:dividerHeight="2px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

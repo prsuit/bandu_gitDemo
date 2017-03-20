@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="#cccccc" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <!-- 按压 -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#afe755" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <!-- 焦点 -->
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="#afe755" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <!-- 默认 -->
+    <item>
+        <shape>
+            <solid android:color="#9ED04D" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</selector><!--<?xml version="1.0" encoding="utf-8"?>--><!--<shape xmlns:android="http://schemas.android.com/apk/res/android">--><!--<corners android:radius="5dp" />--><!--<solid android:color="#9ED04D" />--><!--</shape>-->

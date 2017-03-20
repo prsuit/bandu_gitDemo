@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+    <!--<include-->
+        <!--android:id="@+id/title_work"-->
+        <!--layout="@layout/title_work" />-->
+    <include
+        android:id="@+id/item_sort"
+        layout="@layout/item_sort"/>
+    <TextView
+        android:id="@+id/tv_sort"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sortContent"
+        android:textSize="@dimen/text_size16"
+        android:textColor="#99000000"/>
+
+    <ListView
+        android:id="@+id/lv_listview"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

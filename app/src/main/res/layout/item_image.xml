@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <me.bandu.talk.android.phone.view.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/default_avatar"
+            CircleImageView:border_width="5dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/ll_name_red"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/classname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="三年级（2）班"
+                    android:textColor="#000"
+                    android:textSize="@dimen/content_textsize_18" />
+
+                <View
+                    android:id="@+id/redTv"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_toRightOf="@+id/classname"
+                    android:background="@drawable/red_point" />
+
+                <ImageView
+                    android:id="@+id/up_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/redTv"
+                    android:padding="8dp"
+                    android:src="@mipmap/next_down" />
+
+            </RelativeLayout>
+
+
+            <ImageButton
+                android:id="@+id/myself_pullulate"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/myself_pullulate" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_workstate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_info_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="当前有"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/todo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#9ED04D"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/content_textsize_14" />
+
+            <TextView
+                android:id="@+id/tv_info_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="份作业要完成哦！"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_14"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_cancle_class"
+                android:layout_width="70dp"
+                android:layout_height="23dp"
+                android:background="@drawable/join_class"
+                android:gravity="center"
+                android:text="取消申请"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:textColor="#95B660"
+                android:textSize="@dimen/content_textsize_12" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_join_class"
+                android:layout_width="185dp"
+                android:layout_height="30dp"
+                android:background="@drawable/join_class"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="加入新班级"
+                android:textColor="#95B660"
+                android:textSize="@dimen/content_textsize_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/noclass"
+        android:orientation="vertical">
+
+        <me.bandu.talk.android.phone.view.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/head_bg"
+            android:src="@mipmap/head_no"
+            android:visibility="invisible"
+            CircleImageView:border_width="5dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="xx"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_14"
+                />
+            <ImageButton
+                android:id="@+id/myself_pullulate"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+               android:background="@drawable/myself_pullulate"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/classname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="三年级一班"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_14"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="编号"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_14"/>
+
+            <TextView
+                android:id="@+id/classnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="89757"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_14"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_needtowork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="当前有"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_14"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/todo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#9ED04D"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/content_textsize_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="份作业待提交！"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_textsize_14"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>-->
+
+</LinearLayout>

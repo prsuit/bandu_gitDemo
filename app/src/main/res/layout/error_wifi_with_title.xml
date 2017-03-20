@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rlRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efeff4"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/title_blue"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="false"
+        >
+        <ImageView
+            android:id="@+id/gobackError"
+            android:layout_centerVertical="true"
+            android:src="@drawable/goback"
+            android:layout_width="50dp"
+            android:visibility="visible"
+            android:padding="10dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_centerInParent="true"
+            android:text="@string/student_work_info"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:layout_marginRight="15dp">
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/content_textsize_18"
+                />
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/image"
+                android:layout_width="@dimen/title_goback_heightwith"
+                android:layout_height="@dimen/title_goback_heightwith"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivWife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_error_load"
+        />
+</LinearLayout>

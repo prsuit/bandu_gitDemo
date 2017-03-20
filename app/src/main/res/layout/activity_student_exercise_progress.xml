@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.bandu.talk.android.phone.activity.StudentExerciseProgressActivity"
+    android:background="@color/gray_bg">
+
+    <include
+        layout="@layout/layout_title"></include>
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/text_dark_gray"
+                android:text="@string/exercise_current"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="成绩:"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:textColor="@color/text_dark_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_source"
+                android:layout_weight="1"
+                android:text="优"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="数量:"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:textColor="@color/text_dark_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_sum"
+                android:layout_weight="1"
+                android:text="4句"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/dash_line"></View>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text_dark_gray"
+            android:text="@string/exercise"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="共练习:"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:textColor="@color/text_dark_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_weight="1"
+                android:text="4/105"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="多多练习，你是最棒的~"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/student_title_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

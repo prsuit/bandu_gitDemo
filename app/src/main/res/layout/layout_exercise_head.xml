@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@mipmap/exercise_head">
+
+        <me.bandu.talk.android.phone.view.CircleImageView
+            android:id="@+id/civ_head"
+            app:border_width="5dp"
+            android:padding="5dp"
+            android:src="@mipmap/default_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/head_bg"/>
+    </RelativeLayout>
+    <TextView
+        android:paddingTop="10dp"
+        android:background="@color/white"
+        android:id="@+id/tv_exercise_time"
+        android:textSize="16sp"
+        android:text="您已累计练习了361天"
+        android:gravity="center"
+        android:textColor="@color/text_dark_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingBottom="10dp"
+        android:background="@color/white"
+        android:id="@+id/tv_exercise_tasks"
+        android:textSize="14sp"
+        android:text=""
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="@color/text_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

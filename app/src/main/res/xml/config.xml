@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="me.bandu.talk.android.phone" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CordovaHttpPlugin">
+        <param name="android-package" value="com.synconset.CordovaHttpPlugin" />
+    </feature>
+    <preference name="weixin_appid" value="wxd98a5a68947348a2" />
+    <preference name="weixin_secret" value="098ccceea67d814942ce7790eb80aec" />
+    <preference name="weixin_partner_id" value="1440062702" />
+    <preference name="weixin_api_key" value="q1w2e3r4t5y6u7i8o9p0qazwsxedcrfv" />
+    <feature name="Weixin">
+        <param name="android-package" value="com.justep.cordova.plugin.weixin.WeixinV3" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="partner" value="2088121369329284" />
+    <preference name="rsa_private" value="MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAM1dORR7+hkwLcxq iLGafOvO2kMlbewWVSq0K0ctfdyIiQ6ptEXKwJIYtDxH1p7djOJW7I2T7V6q+jd0 AX7mFu9Hoqynfy4C6JjO9htmC+Etv8o+psYIOFiCzKabCfU8TEqOBj7MRtx7xzzs yeTMlvgjCbHUDW45/uQe8jrI7dD/AgMBAAECgYBTmaqd6yZR0KokOA4zdrd56zgw 83C/FgxPmQ6xKBS/jRl2TaFkc/hWwRXGIFx/SaOLlGUx8VFFI4c+wcvGE/arcIJi Uba3f9tsvIzTx7cCRJjf2MZi3I+2u/pHXCA46HLRxmiKwpTiipWklhLzbZuYgcTF jH4M5TEOqXSzRh1PeQJBAPk4Sxr/Cc2zkI1+cFkoeW4UEhNDGhEojRvpQapEkdhn X9gWtxBbpGUwPl2uNHGHnTdIFKjUy5p2FhyXBcfb10UCQQDS835h7y3iXpDUYTOo O54QOWJPz9Yeb7V9FSnKIjwNM29n0K3J83D5z5tGxYtyIKK7CXZkAIRFJQgOs8lJ QvlzAkAaHA2yTFnolRFl4YM/s//UyoGCRxtqBMeTzwI0Jm7pLxtZdjfDnPZCK6W9 Bs0zv7N24TRY48JY8loqsJ/Ian3JAkAnCah5tylmmtlydAp7N40os3XeDzgwqbuM Sj5RicRTLRGQxK1kkgh2MlUp46TKmf+DXVzrZK0VnqS/E8ZMKHjBAkAIUEKVgJag 8pwI1p1k9RAN4jLQWq7JP0mUs2rJFah0LK37EI5DzWssov7IdFNxs3CB+7acI4Qn AcpK+58pKUAG" />
+    <preference name="rsa_public" value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRAFljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQAB" />
+    <feature name="Alipay">
+        <param name="android-package" value="com.justep.cordova.plugin.alipay.Alipay" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="AppPreferences">
+        <param name="android-package" value="me.apla.cordova.AppPreferences" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="Zip">
+        <param name="android-package" value="org.apache.cordova.Zip" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Toast">
+        <param name="android-package" value="nl.xservices.plugins.Toast" />
+    </feature>
+    <preference name="webView" value="com.justep.cordova.plugin.engine.tencent.TencentWebViewEngine" />
+    <preference name="webViewEngine" value="tencent" />
+    <feature name="AppVersion">
+        <param name="android-package" value="uk.co.whiteoctober.cordova.AppVersion" />
+    </feature>
+    <feature name="Keyboard">
+        <param name="android-package" onload="true" value="org.apache.cordova.labs.keyboard.Keyboard" />
+    </feature>
+    <feature name="SpinnerDialog">
+        <param name="android-package" value="hu.dpal.phonegap.plugins.SpinnerDialog" />
+    </feature>
+    <allow-intent href="market:*" />
+    <name>live_20170220A</name>
+    <description />
+    <author email="" href="" />
+    <content src="http://www.jiaoxuesheji.cn/v-2q6Znq-zh_CN-/live/index.w" />
+    <access origin="*" />
+    <access launch-external="yes" origin="sms:*" />
+    <access launch-external="yes" origin="tel:*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="AppendUserAgent" value="x5app/1.0.0" />
+    <allow-navigation href="*" />
+    <preference name="BackgroundColor" value="0xffffffff" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="Orientation" value="default" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+</widget>

@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="me.bandu.talk.android.phone.activity.StudentDoExerciseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/student_exercise_buttom">
+
+        <include layout="@layout/layout_title"></include>
+
+        <ListView
+            android:id="@+id/lv_exericises"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:dividerHeight="10dp"></ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_exercise_recordbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/record_popbg"
+        android:paddingBottom="@dimen/student_exercise_buttom"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_exercise_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lv_exercise_loudView"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <me.bandu.talk.android.phone.view.LoudView
+            android:id="@+id/lv_exercise_loudView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_exercise_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/student_exercise_buttom"
+        android:layout_gravity="bottom"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_doexercise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners_white"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_mic" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

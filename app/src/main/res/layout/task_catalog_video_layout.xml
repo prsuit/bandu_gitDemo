@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/task_catalog_video_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <me.bandu.talk.android.phone.view.Video
+            android:id="@+id/task_catalog_video_video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_pop"
+            android:background="@mipmap/no_voice" />
+
+
+        <ImageView
+            android:id="@+id/task_catalog_video_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/back_video" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/task_catalog_video_lsitview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/task_catalog_video_bottom_view"
+        android:layout_below="@+id/task_catalog_video_top_view"
+        android:divider="@null"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/task_catalog_video_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/student_exercise_buttom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/task_catalog_video_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/four_green"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="去配音"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/task_catalog_video_topic"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/four_white_green"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="题干"
+            android:textColor="@color/student_title_bg"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/task_catalog_video_notnet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/notnet"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/task_catalog_video_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/back_video" />
+    </FrameLayout>
+</RelativeLayout>

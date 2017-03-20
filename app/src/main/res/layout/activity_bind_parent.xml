@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="me.bandu.talk.android.phone.activity.BindParentActivity">
+
+    <include layout="@layout/title_green_layout"
+             android:id="@+id/title"/>
+
+    <TextView
+        android:layout_below="@+id/title"
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/bind_step"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_textsize_25"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_shape_round1"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/green"
+        android:textSize="@dimen/title_textsize"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/attention_wx"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/title_textsize"/>
+
+    <ImageView
+        android:id="@+id/tv5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/parentbind"/>
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tv5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/back_shape_round1"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/green"
+        android:textSize="@dimen/title_textsize"/>
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/click_to_bind"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_size18"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv8"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv8"
+            android:layout_centerHorizontal="true"
+            android:text="@string/input_bind_code"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size18"/>
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="ABC"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size18"/>
+    </LinearLayout>
+</RelativeLayout>

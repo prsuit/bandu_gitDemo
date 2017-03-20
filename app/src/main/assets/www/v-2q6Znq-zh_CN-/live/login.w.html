@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cjai2my" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjai2my" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">
+  <style>.input-group-addon.cjai2my{border: none; background-color: transparent} .form-control.cjai2my{border: none} .x-panel-content.cjai2my > .list-group-item.cjai2my{border: none} .spacing.cjai2my{margin-bottom: 10px} .x-toggle.cjai2my{margin-top: -8px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="cjai2my" class="cjai2my"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-has-iosstatusbar pciuuama-iosstatusbar cjai2my" xid="panel1" style="background-color:#F2F2F2;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjai2my"> 
+    <div class="x-panel-top cjai2my" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjai2my"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjai2my" xid="titleBar1" style="background-color:#ffffff;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cjai2my"> 
+        <div class="x-titlebar-left cjai2my" xid="left1" __cid="cjai2my"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjai2my" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cjai2my"> 
+            <i class="icon-chevron-left cjai2my" xid="i2" __cid="cjai2my"></i>  
+            <span xid="span3" __cid="cjai2my" class="cjai2my"></span>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cjai2my" xid="title1" __cid="cjai2my"> 
+          <span xid="span1" style="font-weight:normal;" __cid="cjai2my" class="cjai2my">登录</span>
+        </div>  
+        <div class="x-titlebar-right  cjai2my" xid="right1" __cid="cjai2my">
+          <div class="empty cjai2my" __cid="cjai2my"></div>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cjai2my" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjai2my"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cjai2my" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;routable&#34;:false,&#34;slidable&#34;:false,&#34;swipe&#34;:false,&#34;wrap&#34;:false}" __cid="cjai2my"> 
+        <div class="x-contents-content  active  active cjai2my" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cjai2my">
+          <ul xid="ul2" __cid="cjai2my" class="cjai2my"> 
+            <li class="list-group-item cjai2my" xid="li1" __cid="cjai2my"> 
+              <div class="input-group cjai2my" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cjai2my"> 
+                <span class="input-group-addon cjai2my" xid="span4" __cid="cjai2my">账号</span>  
+                <input type="text" class="form-control cjai2my" component="$model/UI2/system/components/justep/input/input" xid="nameInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;请输入标准的11位手机号，这是您进直播间的验证码&#34;}" __cid="cjai2my">
+              </div> 
+            </li>  
+            <li class="list-group-item cjai2my" xid="li1" __cid="cjai2my"> 
+              <div class="input-group cjai2my" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cjai2my"> 
+                <span class="input-group-addon cjai2my" xid="span5" __cid="cjai2my">密码</span>  
+                <input component="$model/UI2/system/components/justep/input/password" class="form-control cjai2my" xid="passwordInput" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&#34;placeHolder&#34;:&#34;请输入密码，由字母数字组合，6到12位之间&#34;}" __cid="cjai2my">
+              </div> 
+            </li> 
+          </ul>  
+          <div class="spacing list-group-item cjai2my" xid="div1" style="height:39px;" __cid="cjai2my"> 
+            <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle x-toggle-xs pull-right cjai2my" xid="toggle2" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false,&#34;label&#34;:{&#34;off&#34;:&#34;OFF&#34;,&#34;on&#34;:&#34;ON&#34;}}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cjai2my">
+              <input type="checkbox" __cid="cjai2my" class="cjai2my">
+              <label data-on="ON" data-off="OFF" __cid="cjai2my" class="cjai2my">
+                <span __cid="cjai2my" class="cjai2my"></span>
+              </label>
+            </span>  
+            <span xid="span6" class="pull-right cjai2my" __cid="cjai2my">自动登录</span>  
+            <span xid="a" __cid="cjai2my" class="cjai2my"></span> 
+          </div>  
+          <div xid="div5" class="list-group-item cjai2my" __cid="cjai2my"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cjai2my" xid="loginBtn" style="background-color:#ffffff;font-size:large;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginBtnClick" data-config="{&#34;label&#34;:&#34;登录&#34;}" __cid="cjai2my"> 
+              <i xid="i1" __cid="cjai2my" class="cjai2my"></i>  
+              <span xid="span2" __cid="cjai2my" class="cjai2my">登录</span>
+            </a> 
+          </div>  
+          <div xid="div4" class="list-group-item  hidden cjai2my" __cid="cjai2my"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cjai2my" xid="enroll" style="background-color:#ffffff;font-size:large;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:enrollClick" data-config="{&#34;label&#34;:&#34;注册&#34;}" __cid="cjai2my"> 
+              <i xid="i4" __cid="cjai2my" class="cjai2my"></i>  
+              <span xid="span10" __cid="cjai2my" class="cjai2my">注册</span>
+            </a> 
+          </div>
+          <div xid="div6" class="list-group-item cjai2my" align="center" style="height:44px;" __cid="cjai2my"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cjai2my" xid="forgetBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:forgetBtnClick" data-config="{&#34;label&#34;:&#34;忘记密码&#34;}" __cid="cjai2my"> 
+              <i xid="i3" __cid="cjai2my" class="cjai2my"></i>  
+              <span xid="span8" __cid="cjai2my" class="cjai2my">忘记密码</span>
+            </a> 
+          </div> 
+        </div>  
+        <div class="x-contents-content cjai2my" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cjai2my">
+          <div class="spacing list-group-item cjai2my" xid="div13" style="height:30px;" __cid="cjai2my"> 
+            <span xid="span12" __cid="cjai2my" class="cjai2my"></span>
+          </div>  
+          <ul xid="ul1" __cid="cjai2my" class="cjai2my"> 
+            <li class="list-group-item cjai2my" xid="li3" __cid="cjai2my"> 
+              <div class="input-group cjai2my" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cjai2my"> 
+                <span class="input-group-addon cjai2my" xid="span9" __cid="cjai2my">账号</span>  
+                <input type="text" class="form-control cjai2my" component="$model/UI2/system/components/justep/input/input" xid="input1" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;请输入11位手机号&#34;}" __cid="cjai2my">
+              </div> 
+            </li> 
+          </ul>  
+          <div xid="div2" class="list-group-item cjai2my" __cid="cjai2my"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cjai2my" xid="message" style="background-color:white;font-size:large;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:messageClick" data-config="{&#34;label&#34;:&#34;获取短信验证码&#34;}" __cid="cjai2my"> 
+              <i xid="i5" __cid="cjai2my" class="cjai2my"></i>  
+              <span xid="span16" __cid="cjai2my" class="cjai2my">获取短信验证码</span>
+            </a> 
+          </div>  
+          <div class="spacing list-group-item cjai2my" xid="div3" style="height:39px;" __cid="cjai2my"> 
+            <span xid="span15" __cid="cjai2my" class="cjai2my"></span>
+          </div>  
+          <ul xid="ul3" __cid="cjai2my" class="cjai2my"> 
+            <li class="list-group-item cjai2my" xid="li7" __cid="cjai2my"> 
+              <div class="input-group cjai2my" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cjai2my"> 
+                <span class="input-group-addon cjai2my" xid="span7" __cid="cjai2my">新密码</span>  
+                <input component="$model/UI2/system/components/justep/input/password" class="form-control cjai2my" xid="password1" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&#34;placeHolder&#34;:&#34;请输入密码&#34;}" __cid="cjai2my">
+              </div> 
+            </li>  
+            <li class="list-group-item cjai2my" xid="li5" __cid="cjai2my"> 
+              <div class="input-group cjai2my" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cjai2my"> 
+                <span class="input-group-addon cjai2my" xid="span13" __cid="cjai2my">新密码</span>  
+                <input component="$model/UI2/system/components/justep/input/password" class="form-control cjai2my" xid="password2" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&#34;placeHolder&#34;:&#34;请再次输入密码&#34;}" __cid="cjai2my">
+              </div> 
+            </li>  
+            <li xid="li8" class="list-group-item cjai2my" __cid="cjai2my"> 
+              <div class="input-group cjai2my" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup7" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cjai2my"> 
+                <span class="input-group-addon cjai2my" xid="span18" __cid="cjai2my">验证码</span>  
+                <input type="text" class="form-control cjai2my" component="$model/UI2/system/components/justep/input/input" xid="input2" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;请输入短信验证码&#34;}" __cid="cjai2my">
+              </div> 
+            </li> 
+          </ul>  
+          <div xid="div8" class="list-group-item cjai2my" __cid="cjai2my"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cjai2my" xid="reset" style="background-color:white;font-size:large;border-style:none none none none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:resetClick" data-config="{&#34;label&#34;:&#34;重置密码&#34;}" __cid="cjai2my"> 
+              <i xid="i6" __cid="cjai2my" class="cjai2my"></i>  
+              <span xid="span17" __cid="cjai2my" class="cjai2my">重置密码</span>
+            </a> 
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cjai2my" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&#34;height&#34;:100}" __cid="cjai2my"></div>
+    <style __cid="cjai2my" class="cjai2my">.x-panel.pciuuama-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pciuuama-iosstatusbar >.x-panel-content { top: 48px;bottom: 100px;}.x-panel.pciuuama-iosstatusbar >.x-panel-bottom {height: 100px;}.iosstatusbar .x-panel.pciuuama-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciuuama-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pciuuama-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciuuama-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciuuama-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciuuama-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

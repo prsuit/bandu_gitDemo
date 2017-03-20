@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    tools:context="me.bandu.talk.android.phone.activity.ClassManagerActivity"
+    >
+
+
+        <include
+            layout="@layout/layout_title"/>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_below="@+id/title_rl"
+            android:id="@+id/ll_select"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <me.bandu.talk.android.phone.view.RightLineTextView
+                android:id="@+id/tv_classset"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="班级设置"
+                android:layout_weight="1"/>
+            <me.bandu.talk.android.phone.view.RightLineTextView
+                android:id="@+id/tv_mystudent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/my_student"/>
+            <TextView
+                android:id="@+id/tv_settextbook"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/bind_book"/>
+        </LinearLayout>
+
+        <me.bandu.talk.android.phone.view.TableBar
+            android:id="@+id/tb_tablebar"
+            android:background="@color/blue"
+            android:layout_below="@+id/ll_select"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"/>
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tb_tablebar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="60sp"
+            android:visibility="gone"/>
+</RelativeLayout>

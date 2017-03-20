@@ -1,0 +1,32 @@
+.x-province-city  .x-popPicker-content .x-province,
+.x-province-city  .x-popPicker-content .x-city{
+	width: 50%;
+}
+
+.x-province-city  .x-popPicker-content .x-district{
+	display: none;
+}
+
+.x-city-district  .x-popPicker-content .x-city,
+.x-city-district  .x-popPicker-content .x-district{
+	width: 50%;
+}
+
+.x-city-district  .x-popPicker-content .x-province{
+	display: none;
+}
+
+.x-province-only  .x-popPicker-content .x-province,
+.x-city-only  .x-popPicker-content .x-city,
+.x-district-only  .x-popPicker-content .x-district{
+	width: 100%;
+}
+
+.x-province-only  .x-popPicker-content .x-district,
+.x-province-only  .x-popPicker-content .x-city,
+.x-city-only  .x-popPicker-content .x-province,
+.x-city-only  .x-popPicker-content .x-district,
+.x-district-only  .x-popPicker-content .x-province,
+.x-district-only  .x-popPicker-content .x-city{
+	display: none;
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_size13"
+        android:layout_marginRight="@dimen/margin_size13"
+        android:layout_marginTop="@dimen/margin_size10"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chinese"
+            android:textColor="@color/tv_color_content"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/ivHorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size10"
+            android:src="@mipmap/icon_horn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWorkContent"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/llContent"
+        android:layout_marginLeft="@dimen/margin_size13"
+        android:layout_marginTop="@dimen/margin_size10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_size8"
+        >
+
+        <ImageView
+            android:id="@+id/ivVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size23"
+            android:src="@mipmap/icon_voice" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:layout_marginLeft="@dimen/margin_size10"
+            android:background="@drawable/icon_test2_c"
+            android:gravity="center_vertical|left"
+            android:padding="@dimen/margin_size10"
+            android:textColor="@color/text_second"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <me.bandu.talk.android.phone.view.ReversalView
+            android:id="@+id/rlScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </me.bandu.talk.android.phone.view.ReversalView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

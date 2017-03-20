@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_size13"
+        android:layout_marginRight="@dimen/margin_size13"
+        android:layout_marginTop="@dimen/margin_size10"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chinese"
+            android:ellipsize="end"
+            android:textColor="@color/tv_color_content"
+            android:textSize="@dimen/text_size14" />
+
+        <ImageView
+            android:id="@+id/ivHorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size10"
+            android:src="@mipmap/icon_horn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWorkContent"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/llContent"
+        android:layout_marginLeft="@dimen/margin_size13"
+        android:layout_marginTop="@dimen/margin_size10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_size8"
+        >
+
+        <ImageView
+            android:id="@+id/ivVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size23"
+            android:src="@mipmap/icon_voice" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:maxWidth="180dp"
+            android:layout_marginLeft="@dimen/margin_size10"
+            android:background="@drawable/icon_test2_c"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/margin_size10"
+            android:textColor="@color/text_second"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="@dimen/margin_size15"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/content_textsize_12"
+            android:background="@drawable/bg_graywhite_circle_shap_wrap"
+            android:gravity="center"
+            android:text="85分" />
+
+    </LinearLayout>
+
+</RelativeLayout>

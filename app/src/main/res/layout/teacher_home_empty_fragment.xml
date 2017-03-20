@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/home_bg"
+              android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ivCreateClass"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_create_class"
+        android:padding="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您还没有创建自己的班级"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/tv_color_class_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="快来创建一个吧!"
+        android:textColor="@color/tv_color_class_name"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

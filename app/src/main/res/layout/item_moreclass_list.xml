@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/name_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/text_classname"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/content_textsize_18"/>
+
+        <TextView
+            android:id="@+id/tv_classname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_class"
+            android:text="三年一班"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/content_textsize_16"/>
+        <TextView
+            android:id="@+id/tv_classid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/tv_classname"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@+id/tv_class"
+            android:text="班级编号:"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/content_textsize_14"/>
+        <TextView
+            android:id="@+id/tv_classnumberid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tv_classname"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@+id/tv_classid"
+            android:text="38987997"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/content_textsize_14"/>
+
+    </RelativeLayout>

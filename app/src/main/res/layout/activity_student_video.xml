@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="me.bandu.talk.android.phone.activity.StudentDoExerciseActivity">
+
+    <RelativeLayout
+        android:id="@+id/fl_show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title_rl">
+
+        <me.bandu.talk.android.phone.view.VedioView
+            android:id="@+id/vp_video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_pop"
+            android:background="@color/white" />
+
+        <ExpandableListView
+            android:id="@+id/elv_chose"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_half"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone">
+
+        </ExpandableListView>
+
+        <ImageView
+            android:id="@+id/civ_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/back_video" />
+
+        <Button
+            android:id="@+id/bt_chose"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/chose"
+            android:text="选课" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_exericises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_seevideo"
+        android:layout_below="@+id/fl_show"
+        android:divider="@null"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_seevideo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/student_exercise_buttom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/bt_goexercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/four_green"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="去练习"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/tv_statechange"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/four_white_green"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="中 英"
+            android:textColor="@color/student_title_bg"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

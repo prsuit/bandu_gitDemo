@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.bandu.talk.android.phone.fragment.ClassSetFragment"
+    android:background="@color/gray_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:paddingLeft="16dp"
+            android:background="@drawable/selector_white_gray"
+            android:id="@+id/rl_check"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="待审核名单"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_check_num"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/tv_check"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/round_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="6"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tv_totle"
+            android:layout_below="@+id/rl_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:textColor="@color/text_dark_gray"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/tv_totle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <me.bandu.talk.android.phone.view.BaseListView
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:id="@+id/slv_student"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+
+            <me.bandu.talk.android.phone.view.SideBar
+                android:id="@+id/sb_selectStudent"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
+

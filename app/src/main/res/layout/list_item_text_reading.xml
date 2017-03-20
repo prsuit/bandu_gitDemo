@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/rlItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_ivHorn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivHorn"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/horn_animation"
+            android:visibility="visible" />
+        </RelativeLayout>
+
+        <!--android:layout_width="@dimen/x26"-->
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:maxWidth="260dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="Chinese"
+            android:textColor="@color/tv_color_content"
+            android:textSize="@dimen/content_textsize_16" />
+
+        <!--android:maxWidth="@dimen/x260"-->
+        <LinearLayout
+            android:id="@+id/llWorkContent"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/llContent"
+            android:layout_marginLeft="@dimen/margin_size13"
+            android:layout_marginTop="@dimen/margin_size10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_size8">
+
+            <ImageView
+                android:id="@+id/ivVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size23"
+                android:background="@drawable/voice_animation" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size10"
+                android:background="@drawable/icon_test2_c"
+                android:gravity="left"
+                android:maxWidth="180dp"
+                android:minWidth="50dp"
+                android:padding="@dimen/margin_size10"
+                android:paddingLeft="6dp"
+                android:textColor="@color/text_second" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/corners_gray"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="  1/5  "
+        android:textSize="16dip" />
+</RelativeLayout>

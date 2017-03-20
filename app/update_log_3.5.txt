@@ -1,0 +1,4 @@
+3.5版本更新日志：2017/03/15
+1.增加h5直播功能，使用cordova；
+2.修改评分包含error单词的bug,修改sklibrary中的MyAIRecorderCallbackImpl.java；
+3.更新版本，3.5版本的verisonCode为66，verisonName3.5；

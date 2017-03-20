@@ -1,0 +1,6 @@
+3.4.4版本更新日志：
+1.修改练习评分引擎，改驰声为sk；--->修改文件VoiceEngCreateUtils.java里创建引擎时的一个参数
+2.修改作业计时的规则，与ios端同步；--->修改文件TaskCatalogActivity，DBUtils.java
+3.修改关于我们的界面，去掉了制作人员；--->修改文件activity_about_us.xml隐藏制作人员条目
+4.修改试用界面里的个人中心点击右上角的邮件崩溃问题；--->修改文件StudentHomeActivity
+5.更新版本，3.4.4版本的verisonCode为60，verisonName3.4.4；--->修改文件app下的build.gradle

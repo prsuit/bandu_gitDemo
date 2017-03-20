@@ -1,0 +1,58 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="title_padingtop">10dp</dimen>
+    <dimen name="title_padingtop_30">30dp</dimen>
+    <dimen name="title_padingbottom">10dp</dimen>
+    <dimen name="title_goback_heightwith">25dp</dimen>
+    <dimen name="right_arrow">20dp</dimen>
+    <dimen name="title_margin_left_right">5dp</dimen>
+    <dimen name="title_margin_left_right_10">10dp</dimen>
+    <dimen name="content_textsize_30">30sp</dimen>
+    <dimen name="content_textsize_25">25sp</dimen>
+    <dimen name="title_textsize">20sp</dimen>
+    <dimen name="content_textsize_18">18sp</dimen>
+    <dimen name="content_textsize_16">16sp</dimen>
+    <dimen name="content_textsize_14">14sp</dimen>
+    <dimen name="content_textsize_12">12sp</dimen>
+    <dimen name="content_textsize_10">10sp</dimen>
+    <dimen name="layout_margin">15dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="text_size12">12sp</dimen>
+    <dimen name="text_size13">13sp</dimen>
+    <dimen name="text_size14">14sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="text_size18">18sp</dimen>
+    <dimen name="imagesize">50dp</dimen>
+    <dimen name="label_title_size">14sp</dimen>
+    <dimen name="tv_size15">15sp</dimen>
+
+    <dimen name="margin_size8">8dp</dimen>
+    <dimen name="margin_size10">10dp</dimen>
+    <dimen name="margin_size13">13dp</dimen>
+    <dimen name="margin_size15">15dp</dimen>
+    <dimen name="margin_size23">23dp</dimen>
+
+    <!-- 友盟 -->
+    <dimen name="body_padding_medium">10dp</dimen>
+    <dimen name="body_padding_large">10dp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="speaker_image_size">36dp</dimen>
+    <dimen name="speaker_image_padding">8dp</dimen>
+    <dimen name="vendor_image_size">100dp</dimen>
+
+    <dimen name="actionbar_height">45dip</dimen>
+    <dimen name="actionbar_item_height">45dip</dimen>
+    <dimen name="actionbar_item_width">45dip</dimen>
+
+
+    <!-- gy -->
+    <dimen name="student_exercise_buttom">60dp</dimen>
+    <dimen name="max_width">300dp</dimen>
+    <dimen name="textSize_small">14sp</dimen>
+</resources>

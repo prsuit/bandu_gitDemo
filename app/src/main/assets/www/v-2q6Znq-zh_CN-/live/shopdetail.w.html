@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window c3uqqaa" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3uqqaa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>@media screen and (min-width: 768px) {body { font-size: 150% } } .bg-white.c3uqqaa{background-color: rgb(255, 255, 255)} .text-black.c3uqqaa{color: rgb(85, 85, 85)} .x-titlebar.c3uqqaa{background-color: rgb(255, 68, 0)} .x-titlebar-right.c3uqqaa .btn.c3uqqaa i.c3uqqaa{font-size: 24px} .row.c3uqqaa{margin: 0} .x-cards.c3uqqaa{padding-top: 15px} .tb-box.c3uqqaa{margin-bottom: 10px; border-top: 1px solid rgb(220, 220, 220); border-bottom: 1px solid rgb(220, 220, 220)} .x-card.c3uqqaa .panel-heading.c3uqqaa{padding: 5px 15px} .x-card.c3uqqaa .panel-heading.c3uqqaa i.c3uqqaa{margin-right: 13px} .tb-img-shop.c3uqqaa{width: 20px; height: 20px} .tb-img-good.c3uqqaa{width: 100%; height: 100px} .tb-nomargin.c3uqqaa{margin: 0} .tb-nopadding.c3uqqaa{padding: 0} .lh.c3uqqaa{overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all} .tb-goodList.c3uqqaa{margin-bottom: 5px; border-bottom: 1px solid rgb(242, 242, 242)} .tb-goodList.c3uqqaa:last-child{margin-bottom: 0px} .tb-goodList.c3uqqaa .x-col.c3uqqaa:first-child{padding-top: 35px} .tb-goodList.c3uqqaa .x-col.c3uqqaa:nth-child(2){width: 100px; padding-right: 5px} .tb-goodList.c3uqqaa .h5.c3uqqaa{height: 30px; overflow: hidden; text-overflow: ellipsis} .tb-goodList.c3uqqaa .h6.c3uqqaa{margin-top: 3px; margin-bottom: 3px} .tb-numberOperation.c3uqqaa{width: 100%; height: 30px} .tb-numberOperation.c3uqqaa .btn.c3uqqaa{border-radius: 0} .tb-numberOperation.c3uqqaa span.c3uqqaa{padding: 4px 15px; border-top: 1px solid rgb(225, 225, 225); border-bottom: 1px solid rgb(225, 225, 225)} .x-panel-bottom.c3uqqaa{border-top: 1px solid rgb(220, 220, 220)} .x-panel-bottom.c3uqqaa .h4.c3uqqaa{margin: 5px 0} .tb-settlement.c3uqqaa{line-height: 50px; background-color: rgb(44, 193, 123); color: rgb(255, 255, 255); font-size: 16px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c3uqqaa" class="c3uqqaa"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pczM3Ynu-iosstatusbar c3uqqaa" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c3uqqaa"> 
+    <div class="x-panel-top c3uqqaa" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3uqqaa"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c3uqqaa" style="background-color:#9ed04d;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;消费明细&#34;}" __cid="c3uqqaa"> 
+        <div class="x-titlebar-left c3uqqaa" __cid="c3uqqaa"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c3uqqaa" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="c3uqqaa"> 
+            <i class="icon-chevron-left c3uqqaa" __cid="c3uqqaa"></i>  
+            <span __cid="c3uqqaa" class="c3uqqaa"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c3uqqaa" __cid="c3uqqaa">消费明细</div>  
+        <div class="x-titlebar-right  c3uqqaa" __cid="c3uqqaa">
+          <div class="empty c3uqqaa" __cid="c3uqqaa"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view c3uqqaa" xid="content1" _xid="C75FF64D625000019BB513F048D11B76" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3uqqaa">
+      <div class="x-scroll c3uqqaa" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="c3uqqaa"> 
+        <div class="x-content-center x-pull-down container c3uqqaa" xid="div3" __cid="c3uqqaa"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down c3uqqaa" xid="i3" __cid="c3uqqaa"></i>  
+          <span class="x-pull-down-label c3uqqaa" xid="span7" __cid="c3uqqaa">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content c3uqqaa" xid="div4" __cid="c3uqqaa"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list c3uqqaa" xid="list1" style="height:207px;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;window.data.datas&#34;}" __cid="c3uqqaa"> 
+            <ul class="x-list-template x-min-height hide c3uqqaa" xid="listTemplateUl4" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl4" __cid="c3uqqaa" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li4" class="x-min-height tb-goodList c3uqqaa" __cid="c3uqqaa"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row c3uqqaa" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c3uqqaa"> 
+                  <div class="x-col x-col-fixed c3uqqaa" xid="col9" style="width:auto;" __cid="c3uqqaa"></div>
+                  <div class="x-col x-col-fixed tb-nopadding c3uqqaa" xid="col7" __cid="c3uqqaa"> 
+                    <img alt="" xid="image1" class="tb-img-good c3uqqaa" height="100%" __cid="c3uqqaa" data-bind="attr:{src:val(&#34;File&#34;)}">
+                  </div>  
+                  <div class="x-col   c3uqqaa" xid="col8" __cid="c3uqqaa"> 
+                    <span class="x-flex text-black tb-nomargin lh c3uqqaa" xid="span26" style="font-size:medium;" __cid="c3uqqaa" data-bind="text:val(&#34;Live_name&#34;)">学好摄影的三个方面</span>  
+                    <div class="text-muted  h6 c3uqqaa" xid="div6" style="margin-top:5px" __cid="c3uqqaa"> 
+                      <span xid="span13" __cid="c3uqqaa" class="c3uqqaa">开课时间:</span>  
+                      <span xid="span14" __cid="c3uqqaa" class="c3uqqaa" data-bind="text:val(&#34;Live_time&#34;)">2016/12/8 17:00</span>
+                    </div>  
+                    <div class="text-muted c3uqqaa" xid="div7" __cid="c3uqqaa"> 
+                      <span xid="span22" class="danger c3uqqaa" style="color:#FF0000;" __cid="c3uqqaa">￥</span>  
+                      <span xid="span28" class="h4 danger c3uqqaa" style="color:#FF0000;" __cid="c3uqqaa" data-bind="text:val('Money')">9.90</span>
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up c3uqqaa" xid="div5" __cid="c3uqqaa"> 
+          <span class="x-pull-up-label c3uqqaa" xid="span8" style="color:#ddd;" __cid="c3uqqaa">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="c3uqqaa" class="c3uqqaa">.x-panel.pczM3Ynu-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pczM3Ynu-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pczM3Ynu-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczM3Ynu-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczM3Ynu-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pczM3Ynu-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczM3Ynu-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczM3Ynu-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczM3Ynu-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

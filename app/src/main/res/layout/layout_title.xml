@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_rl"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:background="@color/title_blue">
+
+    <RelativeLayout
+        android:id="@+id/title_left"
+        android:background="@drawable/selector_gray_trans"
+        android:paddingLeft="16dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_title_left_image"
+            android:layout_width="14dp"
+            android:layout_height="21dp"
+            android:background="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/btn_title_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    
+     <!--<ImageView
+            android:id="@+id/title_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+         android:src="@drawable/back_selector"/>-->
+
+    <TextView
+        android:id="@+id/title_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/image_play_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/music"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+        <TextView
+            android:background="@drawable/selector_gray_trans"
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_centerInParent="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="25dp"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/image_idea"
+            android:layout_width="@dimen/title_goback_heightwith"
+            android:layout_height="@dimen/title_goback_heightwith"
+            android:src="@mipmap/icon_idea"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

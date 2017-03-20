@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    tools:context="me.bandu.talk.android.phone.activity.StudentTextbookChoseActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_title_search"/>
+
+    <LinearLayout
+        android:layout_below="@+id/title_rl"
+        android:id="@+id/ll_chose"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <RadioGroup
+            android:id="@+id/rg_chose"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:button="@null"
+                android:textSize="14sp"
+                android:textColor="@drawable/selector_textbook_chose_textcolor"
+                android:background="@drawable/selector_textbook_chose_new"
+                android:gravity="center"
+                android:id="@+id/rb_grade"
+                android:text="按年级"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/rb_hot"
+                android:text="按热度"
+                android:button="@null"
+                android:textSize="14sp"
+                android:textColor="@drawable/selector_textbook_chose_textcolor"
+                android:background="@drawable/selector_textbook_chose_new"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rl_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_filter"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="筛选"
+                android:textColor="@color/text_dark_gray"
+                android:gravity="center"/>
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/iv_nosearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/no_search"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/iv_nosearch"
+            android:text="没有找到您需要的练习素材"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/ll_chose"
+        android:id="@+id/lv_books"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"></ListView>
+
+</RelativeLayout>

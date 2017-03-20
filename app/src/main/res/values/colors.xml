@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blueStatus">#1680E2</color>
+    <color name="grey">#8C8C8C</color>
+
+    <!-- gaoye -->
+    <color name="black">#000000</color>
+    <color name="light_black">#425661</color>
+    <color name="red">#f00000</color>
+    <color name="blue">#3bade5</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#77000000</color>
+    <color name="light_red">#e86a6b</color>
+    <color name="gray">#c5c5c5</color>
+    <color name="backgray">#77494949</color>
+    <color name="orange">#ffb800</color>
+    <color name="student_color">#00a1e8</color>
+    <color name="teacher_color">#ff6c17</color>
+
+    <color name="delete_red">#ff3b32</color>
+    <color name="text_red">#ea6c6d</color>
+    <color name="gray_bg">#f3f3f3</color>
+    <color name="text_dark_gray">#494949</color>
+    <color name="textbook_selected">#9ed152</color>
+
+    <color name="student_title_bg">#9ed04b</color>
+    <color name="v_line">#e2e2e2</color>
+    <color name="v_home_line">#dcdbdb</color>
+
+
+    <!-- 录音灰色文字-->
+    <color name="mp3_len_gray">#71A040</color>
+    <!-- 灰色文字-->
+    <color name="text_gray">#b5aea9</color>
+    <!-- 浅灰色背景-->
+    <color name="back_gray">#f3f2f1</color>
+    <!-- 浅灰色-->
+    <color name="line_gray">#e9e8e5</color>
+    <!-- 标题颜色-->
+    <color name="title_color">#00afe6</color>
+    <!-- item颜色-->
+    <color name="item_color">#ebebeb</color>
+
+
+    <color name="title_blue">#3bade5</color>
+    <color name="white">#ffffff</color>
+    <color name="bac_gray">#F2F2F2</color>
+    <color name="bac_blue">#50ccff</color>
+    <color name="bac_gray_harder">#E6E6E6</color>
+    <color name="bac_black_light">#515658</color>
+    <color name="btn_blue">#3BAEE7</color>
+    <color name="btn_pink">#EA6C6D</color>
+
+    <color name="green">#9ed04b</color>
+    <color name="column_green">#76C5EC</color>
+    <color name="radio_green">#9ed04b</color>
+    <color name="radio_white">#ffffff</color>
+
+    <color name="home_bg">#EFEFF4</color>
+    <color name="see_student_work_father_item_bg">#F0EFF5</color>
+    <color name="tv_color_class_name">#515151</color>
+    <color name="tv_color_class_code">#8d8d8d</color>
+    <color name="tv_color_see_work_quizname">#888787</color>
+    <color name="tv_color_my_pressed">#3BAEE7</color>
+    <color name="tv_color_my_default">#8793a9</color>
+    <color name="tv_color_content">#050505</color>
+    <!-- 学生录音背景色 -->
+    <color name="record_popbg">#000000</color>
+    <color name="do_work_bg">#F0EFF4</color>
+    <color name="do_work_line">#F0EFF4</color>
+    <color name="do_work_item_done_bg">#F6F6F6</color>
+    <color name="do_work_item_doing_bg">#FBF4D4</color>
+
+    <!-- 友盟 -->
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+    <color name="accent_1">#ff29549f</color>
+    <color name="hyperlink">#ffff549f</color>
+    <color name="background_1">#ffffffff</color>
+    <color name="whats_on_separator">#4d000000</color>
+    <color name="all_track_color">#ff222222</color>
+    <color name="block_column_1">#ff0fabff</color>
+    <color name="block_column_2">#ffdf1831</color>
+    <color name="block_column_3">#ff009939</color>
+    <!--分数颜色-->
+    <color name="green_score">#8fd251</color>
+    <color name="blue_score">#00caf2</color>
+    <color name="red_score">#ff615e</color>
+
+    <color name="download_bg">#9ed04b</color>
+    <color name="nodown_bg">#cbcbcb</color>
+    <color name="red_line">#E76E73</color>
+    <color name="text_gray_popu">#6a6a6a</color>
+    <color name="text_second">#70a03f</color>
+
+    <!--柱状图颜色-->
+
+    <color name="graph_column">#39ADE6</color>
+    <color name="graph_background1">#74C6EE</color>
+
+    <color name="graph_background">#fff</color>
+
+
+
+    <!--updateAppDialog-->
+    <color name="dialog_default_background">#fbfbfb</color>
+    <color name="dialog_but_selected_background">#cccccc</color>
+    <color name="dialog_text_color">#000000</color>
+    <color name="dialog_line_color">#c0c0c0</color>
+    <color name="lucency">#000000</color>
+
+</resources>

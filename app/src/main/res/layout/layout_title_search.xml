@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_rl"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:background="@color/title_blue">
+
+    <RelativeLayout
+        android:id="@+id/title_left"
+        android:background="@drawable/selector_gray_trans"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_title_left_image"
+            android:layout_width="14dp"
+            android:layout_height="21dp"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:id="@+id/btn_title_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <me.bandu.talk.android.phone.view.SearchEditText
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:id="@+id/title_edit"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/title_left"
+        android:layout_toLeftOf="@+id/title_right"
+        android:textColor="@color/text_gray"
+        android:padding="5dp"
+        android:background="@drawable/four_white"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:background="@drawable/selector_gray_trans"
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingRight="16dp"
+        android:paddingLeft="10dp"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

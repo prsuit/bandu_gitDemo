@@ -1,0 +1,39 @@
+.border{
+	border:2px solid #fff;
+}
+
+.loginstatus{
+	
+	margin-left:15%;
+	width:70%;
+	border-style:none none none none;
+}
+
+.registerstatus{
+	background-color:ff0033;
+	/* margin-left:50%; */
+	 width:35%; 
+	border-style:none none none none;	
+}
+
+
+.cancelstatus{
+	background-color:#ff0000;
+	margin-left:15%;
+	width:70%;
+	border-style:none none none none;
+}
+
+.loginstatus1{
+	background-color:#00A8FF;
+	margin-left:15%;
+	width:70%;
+	border-style:none none none none;
+}
+
+.cancelstatus1{
+	background-color:#ff0000;
+	margin-left:15%;
+	width:70%;
+	border-style:none none none none;
+}

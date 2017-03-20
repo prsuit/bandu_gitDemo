@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_pressed="true">
+        <bitmap android:src="@mipmap/duigou"></bitmap>
+    </item>
+    <item android:state_selected="true">
+        <bitmap android:src="@mipmap/duigou"></bitmap>
+    </item>
+
+    <item android:state_enabled="true">
+        <bitmap android:src="@drawable/translation"></bitmap>
+    </item>-->
+    <item android:state_checked="true">
+        <bitmap android:src="@mipmap/duigou"></bitmap>
+    </item>
+    <item android:state_checked="false">
+        <bitmap android:src="@drawable/translation"></bitmap>
+    </item>
+</selector>

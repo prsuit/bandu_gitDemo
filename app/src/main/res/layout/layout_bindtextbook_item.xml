@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_centerVertical="true"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/tv_versionname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="人教北京版"/>
+
+    <LinearLayout
+        android:id="@+id/ll_contant"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_versionname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:background="@drawable/white_gray"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_bookimg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tv_bookname1"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="一年级上"
+                android:background="#77000000"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/white_gray"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iv_bookimg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tv_bookname2"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="一年级下"
+                android:background="#77000000"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/ll_contant"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_line"
+        android:background="@color/gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>

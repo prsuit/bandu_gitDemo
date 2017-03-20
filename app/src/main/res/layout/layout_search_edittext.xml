@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/four_white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_searchLeft"
+        android:src="@mipmap/search_icon"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:layout_toLeftOf="@+id/iv_clear"
+        android:layout_toRightOf="@+id/iv_searchLeft"
+        android:id="@+id/et_input"
+        android:hint="请输入练习素材的名称"
+        android:textColorHint="@color/text_gray"
+        android:background="@null"
+        android:textSize="16sp"
+        android:textColor="@color/text_gray"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:layout_toLeftOf="@+id/iv_clear"
+        android:layout_toRightOf="@+id/iv_searchLeft"
+        android:id="@+id/tv_input"
+        android:background="@null"
+        android:textColor="@color/text_gray"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:src="@mipmap/search_delete"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</RelativeLayout>

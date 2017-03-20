@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <View
+        android:layout_width="3dp"
+        android:background="#00B1EB"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_sentence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="5"
+        android:padding="10dp"
+        android:text="I want to go shopping after dinner"
+        android:textColor="@drawable/item_weak_sentences_selector"
+        android:textSize="@dimen/content_textsize_16" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="34分"
+        android:textColor="@drawable/item_weak_sentences_selector"
+        android:textSize="@dimen/content_textsize_16" />
+</LinearLayout>
